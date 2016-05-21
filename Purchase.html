@@ -1,0 +1,68 @@
+
+<!doctype html>
+<head>
+<link rel="stylesheet" href="css/styles.css"><!--Load our style sheet-->
+</head>
+ 
+<body  onload="Price()"><!--Load Price on body load-->
+    <h1>Purchase Form</h1><!--Heading 1-->
+    <h2> <div id="Price"></h2><!--Display the price-->
+    <button class ="button" onclick="location.href='Home.html'"><span>Home</span></button> <!--goto Home-->
+
+<form name="PurchaseForm">
+  First name:<br>
+  <input type="text" id="firstname" placeholder="First Name.."/></br><!--get the data entered and store it-->
+  Last name:<br>
+  <input type="text" id="lastname" placeholder="Last Name.."/></br><!--get the data entered and store it-->
+  Adress(e.g: 12 streety ave):<br>
+    <input type="text" id = "Address" placeholder="Address.."/></br><!--get the data entered and store it-->
+   City or Suburb:<br>
+    <input type="text" id = "City/Suburb" placeholder="City/Suburb.."/></br><!--get the data selected and store it-->
+    State:<br>
+      <select class="custom-dropdown" id="state">
+      <option value="NSW">NSW</option>
+      <option value="ACT">ACT</option>
+      <option value="VIC">VIC</option>
+      <option value="TAS">TAS</option>
+      <option value="SA">SA</option>
+      <option value="WA">WA</option>
+      <option value="NT">NT</option>
+      <option value="QLD">QLD</option>
+      </select>
+    </br>
+    Post Code:<br>
+    <input type=number id = "PostCode" placeholder="Post Code.." min = "1111" max="9999"/></br><!--get the data entered and store it-->
+    Credit Card Number:<br>
+    <input type=number id = "CC#" placeholder="CC Number.." min = "1111111111111111" max="9999999999999999"/></br><!--get the data entered and store it-->
+      Credit card expiry date Month:<br>
+      <select class="custom-dropdown" id="CCExpiryMonth">
+      <option value="JAN">JAN</option>
+      <option value="FEB">FEB</option>
+      <option value="MARCH">MARCH</option>
+      <option value="APRIL">APRIL</option>
+      <option value="MAY">MAY</option>
+      <option value="JUNE">JUNE</option>
+      <option value="JUL">JUL</option>
+      <option value="AUGUST">AUGUST</option>
+      <option value="SEP">SEP</option>
+      <option value="OCT">OCT</option>
+      <option value="NOV">NOV</option>
+      <option value="DEC">DEC</option>
+      </select>
+    </br>
+     Credit card expiry date Year:<br>
+      <select class="custom-dropdown" id="CCExpiryYear">
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      </select>
+    </br>
+    <button class ="button" onclick="ValidateSubmit()"><span>Submit</span></button>   <!--Submit the form-->
+</form>
+</body>
+<footer>
+<script src="js/myScripts.js" type="text/javascript"></script><!--Load our javascript-->
+</footer>
+</html>
